@@ -40,7 +40,7 @@ var stroka="";
 
 for(var i = 0; i< 5; i++){
     stroka += "x";
-    arr.push(stroka);
+    arr.push(stroka);``
 }
 console.log(arr);
 
