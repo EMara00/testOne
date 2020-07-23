@@ -1,0 +1,60 @@
+<DOCTYPE html!>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel = "Stylesheet" href = "./still/styles.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+
+    </head>
+  
+    <body>
+        <script src="./scr/java.js"></script>
+
+        <div id = "todo">
+            <h1> My list of cases <i id="pencil" class="fas fa-pencil-alt"></i> </h1>
+  
+            <input type = "text" placeholder="Do you have a new case?">
+  
+            <ul class="todos">
+                
+            </ul>
+  
+            <div id= "buttons">
+                <button class="save">Save</button>
+                <button class="clear">Clear</button>
+                <button class="tipBtn">Tips</button>
+            </div>
+        </div>
+  
+        <div id = "overlay">
+           <a href="javascript:void(0)" class="closebtn">&times;</a>
+           <ul class="tips">
+               <li>Click on the pencil to hide or show input area</li>
+               <li>Type text into input area and press enter to add todo to list</li>
+               <li>Hover over the todo and click the on trash can to delete</li>
+               <li>Click the clear button to clear all todos from list</li>
+               <li>Click the Save button to save your todos to access them later even if you exit the browser </li>
+            </ul>
+        </div>
+
+        <script type="module">
+            import {clearing} from './scripts/clearBtn.js';
+            import {closing} from './scripts/closeBtn.js';
+            import {inputing} from './scripts/input.js';
+            import {penciling} from './scripts/pencil.js';
+            import {saving} from './scripts/saveBtn.js';
+            import {tipsing} from './scripts/tipsBtn.js';
+            import {uling} from './scripts/ul.js';
+            
+            clearing();
+            closing();
+            inputing();
+            penciling();
+            saving();
+            tipsing();
+            uling();
+        </script>
+
+
+    </body>
+</html>
