@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+<body>
+    <div id="container">
+        <form id="form">
+            <h1>Меню коробок</h1>
+
+            <p class="fon">Размер коробки</p>
+            <div class="radio_button_container">
+                <input type="radio" name="size" id="small" value="small" checked>
+                <label for="small">Маленький</label> 
+    
+                <input type="radio" name="size" id="large" value="large" >
+                <label for="large">Большой</label> 
+            </div>
+
+            <p class="fon">Гарнир</p>
+            <div class="garnish_container">
+                <input type="radio" name="garnish" id="rice" value="rice" checked>
+                <label for="rice">Рис</label>
+
+                <input type="radio" name="garnish" id="pasta" value="pasta" >
+                <label for="pasta">Макароны</label>
+            </div>
+
+            <p class="fon">Начинка к гарниру</p>
+            <div class="checkbox_container">
+                <input type="checkbox" name="add" id="pig" value="pig" checked>
+                <label for="pig">Терияки и свинина</label>
+
+                <input type="checkbox" name="add" id="meat" value="meat" >
+                <label for="meat">Унаги и говядина</label>
+
+                <input type="checkbox" name="add" id="chicken" value="chicken" >
+                <label for="chicken">Устрицы и курица</label>
+            </div>
+
+            <p class="fon">Дополнение к блюду</p>
+            <div class="checkbox_container">
+                <input type="checkbox" name="add" id="bread_crumbs" value="bread_crumbs" >
+                <label for="bread_crumbs">Сухарики</label>
+
+                <input type="checkbox" name="add" id="extra_souse" value="extra_souse" >
+                <label for="extra_souse">Соус</label>
+            </div>
+
+            <input type="submit" id = "calculate" value="Calculate">
+        </form>
+
+        <div id="expense">
+            <span id="prise">0.00</span><sup>$</sup> <br>
+            <span id="calories">00</span> <small>cal</small>
+        </div>
+ 
+    </div>
+
+    <script src="java.js"></script>
+</body>
+</html>
